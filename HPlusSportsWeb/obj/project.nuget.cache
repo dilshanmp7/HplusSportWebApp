@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kU/nd5zYxMw9z9rJdSCSEd23PSYPiZxPH6P2M8mbHBLBvBmt0NNqaXk7ZBIL/0XB+NR48rGsN4zjyYYct8OBlw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dper\\Desktop\\LinkedIn\\Azure\\Deploy Azure Site\\HPlusSportsWeb\\HPlusSportsWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dper\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\dper\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
