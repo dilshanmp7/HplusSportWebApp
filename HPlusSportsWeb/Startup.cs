@@ -31,8 +31,7 @@ namespace HPlusSportsWeb
             var apiAddress = Configuration[Constants.KEY_API_BASE_URI];
             Uri apiBaseUri = new Uri(apiAddress);
 
-            HttpClient apiClient = new HttpClient();
-            apiClient.BaseAddress = apiBaseUri;
+            HttpClient apiClient = new HttpClient {BaseAddress = apiBaseUri};
             ServicePointManager.FindServicePoint(
                 apiBaseUri).ConnectionLeaseTimeout = 60000;
             //add additional service point configuation here if necessary

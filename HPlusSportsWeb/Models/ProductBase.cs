@@ -3,15 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HPlusSportsApi.Models
+namespace HPlusSportsWeb.Models
 {
-    public class Product
+    public class ProductBase
     {
-        public int ID { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-
-        public string ImageTitle { get; set; }
 
         public string Image { get; set; }
     }

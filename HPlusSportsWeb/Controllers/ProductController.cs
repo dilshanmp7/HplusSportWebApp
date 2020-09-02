@@ -10,6 +10,10 @@ using Newtonsoft.Json;
 
 namespace HPlusSportsWeb.Controllers
 {
+    /// <summary>
+    /// Displays list of products as well as product details page
+    /// for adding to the cart
+    /// </summary>
     public class ProductController : Controller
     {
         HttpClient client;
@@ -26,11 +30,11 @@ namespace HPlusSportsWeb.Controllers
             return View(products);
         }
 
-        public async Task<IActionResult> Detail(int id)
+        public async Task<IActionResult> Detail(string id)
         {
-            var response = await client.GetStringAsync($"product/{id}" );
+            var response = await client.GetStringAsync($"product/{id}");
 
-            var product = JsonConvert.DeserializeObject<Models.Product>(response);
+            var product = JObject.Parse(response);
             return View(product);
         }
     }
